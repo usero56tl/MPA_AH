@@ -31,3 +31,39 @@ ul#menu_horizontal a img {
 border : none;
 padding :  0 0.3em;
 }
+
+/*iles.html*/
+h1{
+	text-align:center;
+	padding-bottom:2%;
+}
+
+h3{
+	color:#A9A9A9;
+	
+}
+
+.article{	
+	margin-left:25%;
+	margin-right:25%;	
+	
+}
+
+.article img{	
+	vertical-align:top;
+	width:300px;
+	float:left;
+	margin-bottom:5%;
+
+}
+
+
+.description{
+	width:300px;
+	text-align:justify;
+	padding-left:2%;
+	float:left;
+	margin-bottom:5%;
+}
+
+/*fin de iles.html*/
