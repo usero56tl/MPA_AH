@@ -33,15 +33,20 @@ padding :  0 0.3em;
 }
 
 /*iles.html*/
+
+@font-face{	/*autre police à la place de Trend*/
+	font-family:"Hotel";
+	src: url("font/hotel_de_paris.ttf"); /*marche pas -_-*/
+	
+}
+
 h1{
+	font-family:Hotel;
 	text-align:center;
 	padding-bottom:2%;
 }
 
-h3{
-	color:#A9A9A9;
-	
-}
+
 
 .article{	
 	margin-left:25%;
@@ -49,21 +54,51 @@ h3{
 	
 }
 
-.article img{	
-	vertical-align:top;
+.article img{
 	width:300px;
 	float:left;
-	margin-bottom:5%;
-
+	margin-bottom:10%;
+	vertical-align:text-top;
+	
 }
 
 
 .description{
 	width:300px;
+	max-width:350px;
+	min-width:100px;
 	text-align:justify;
-	padding-left:2%;
 	float:right;
 	margin-bottom:5%;
+	height:10px;
+	font-size:smaller;
+	font-family :Helvetica light ;
 }
 
+.description h3{
+	color:#A9A9A9;
+	font-size:large;
+}
+
+.container{	
+	width:300px;
+	display:block;
+}
+
+.description input{	
+	width:150px;
+	margin-top:3%;
+	height:32px;
+	
+}
+
+#btn{
+	background-color: #FFFFFF;
+	
+}
+
+input:hover {
+	background-color:#696969;
+	color:#FFFFFF;
+}
 /*fin de iles.html*/
