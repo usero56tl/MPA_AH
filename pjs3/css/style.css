@@ -54,7 +54,8 @@ padding :  0 0.3em;
 }
 
 .article-ile img{
-	width:300px;
+	width:20em;
+	height:11em;
 	float:left;
 	margin-bottom:10%;
 	vertical-align:text-top;
