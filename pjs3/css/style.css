@@ -1,121 +1,357 @@
-ul#menu_horizontal { 
-width : 600px; 
-height : 30px;
-margin : 1% 0 50% 50%;
-padding : 0;
-background-color : #f4f9fd;
-border : 1px solid black;
-list-style-type : none; 
+
+body {
+  background: #ffffff;
 }
- 
-ul#menu_horizontal li {
-padding : 0 0.5em;  
-line-height : 30px;
+
+
+.main
+{
+  display: flex;
+  justify-content: center;
+  background-image: url("../img/fond-ile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+   background-color: #cccccc;
 }
- 
-ul#menu_horizontal li.bouton_gauche {
-float : left;
-border-right : 1px solid black; 
+
+#conteneur-ile
+{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+  background-color: rgba(10,0,0,0.6);
 }
- 
-ul#menu_horizontal a {
-color : black;
-text-decoration : none;
-padding : 0 0.5em; 
-font :  1em "Trebuchet MS";
+
+.article-ile
+{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
- 
-ul#menu_horizontal a:hover { text-decoration : underline; }
- 
-ul#menu_horizontal a img { 
-border : none;
-padding :  0 0.3em;
+
+.article-ile img{
+  max-width:20em;
+  max-height:11em;
+  min-width: 0; min-height: 0;
+  margin-bottom: 5%;
+}
+
+.description-ile{
+  height:100%; 
+  max-width:350px;
+  text-align:justify;
+  margin-top: -15px;
+  margin-left: 30px;
+  margin-bottom:5%;
+  font-size:smaller;
+  font-family:"Helvetica light" ;
+}
+
+.btn-ile{
+  margin-top: 20px;
+  background-color: #FFFFFF;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    cursor: pointer;
+    width:50%; 
+    height:0%;
+}
+
+.entete
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.btn-ile:hover {
+    background-color: #555555; /* Green */
+    color: white;
 }
 
 /*iles.html*/
 
-.body-ile body{
-	background-image:url(../img/fond-ile.jpg);
-	background-repeat:no-repeat;
+@font-face{ /*autre police à la place de Trend*/
+  font-family:"Hotel";
+  src: url("font/hotel_de_paris.ttf"); /*marche pas -_-*/
 }
 
-.titre {	
-	src:url("font/hotel_de_paris.ttf") format ("ttf");
-	font-family:"hotel"; 
-	text-align:center;
-}
-
-
-
-.article-ile{	
-	margin-left:25%;
-	margin-right:25%;	
-	
-}
-
-.article-ile img{
-	width:20em;
-	height:11em;
-	float:left;
-	margin-bottom:10%;
-	vertical-align:text-top;
-	
+h1{
+  font-family:Hotel;
+  text-align:center;
+  padding-bottom:2%;
 }
 
 
-.description-ile{
-	width:300px;
-	max-width:350px;
-	min-width:100px;
-	text-align:justify;
-	float:right;
-	margin-bottom:5%;
-	height:10px;
-	font-size:smaller;
-	font-family :Helvetica light ;
+/* footer */
+
+#monBouton{
+  height:60px;
+  margin-left:7px;
 }
 
-.description-ile h3{
-	color:#A9A9A9;
-	font-size:large;
+#monBouton:hover{
+  height:65px;
 }
 
-.container-ile{	
-	width:300px;
-	display:block;
+.logo{
+  padding-left:1%;
+  width: 110px;
+}
+.nomlogo{
+  width: 205px;
 }
 
-.description-ile input{	
-	width:150px;
-	margin-top:3%;
-	height:32px;
-	
+.foot{
+  padding-top: 0.2px;
+  height: 170px;
+  width:100%;
+  background-color:#333333;
+  color:grey;
+  text-align:center;
 }
 
-#btn-ile{
-	background-color: #FFFFFF;
+
+/* menu */
+.pas-active
+{
+   pointer-events: none;
+   cursor: default;
 }
 
-#btn-ile input:hover {
-	background-color:#696969;
-	color:#FFFFFF;
+
+h1 { margin:150px auto 10px auto; text-align:center; color:#fff;}
+nav {
+  border: red;
+  margin-top: 10px;
+  max-width: 700px;
+  width: 95%;
 }
 
-@media all and (max-width: 1024px){
-	.titre{
-		font-size:28px;
-	}
-    .article{
-        width: auto;
-    }
-	.container{
-		width:auto;
-	}
-	.description{
-	
-	}
-	.article img{
-		display:inline-block;
-	}
+
+#checkbox1,
+.toggle {
+  display: none;
 }
 
+.menu {
+  padding: 0;
+  margin: 0;
+  max-width: 700px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  align-self: center;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 10px 15px;
+  transition: background .2s linear;
+}
+
+@media screen and (max-width: 600px) {
+  .menu li a {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .toggle {
+    clear: both;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 40px;
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    color: #595959;
+    background: #dbdbdb;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all .1s linear;
+  }
+  .toggle:hover {
+    background: #cecece;
+  }
+  #checkbox1:checked + label .demo li {
+    opacity: 1;
+    visibility: visible;
+    transition: all .7s linear;
+  }
+
+  #checkbox1:checked + label .demo {
+    height: 200px;
+  }
+  .menu {
+    border-radius: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 0px;
+    transition: height .3s linear;
+  }
+  .menu li {
+    display: flex;
+    /* magic */
+    align-self: center;
+    width: 95%;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .menu li a {
+    width: 95%;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+  }
+}
+
+.demo {
+ background-image: linear-gradient(white 50%,grey);
+ border-top:2px solid #F1F1F1;
+}
+
+.demo li a {
+  color: #000066;
+  border-right : 1px solid white;
+  border-left : 1px solid white;
+
+}
+
+.demo li a:hover {
+  background: #000066;
+  color: white;
+}
+
+
+
+/* carte guadeloupe et metropole */
+    
+/* --------------------------------------*/
+/*              Map                      */
+.map_image
+{
+  width:  75%;
+  float: left;
+}
+.map_image path
+{
+  fill : #a4ced2;
+  stroke: #FFF;
+  stroke-width : 1px;
+  transition: fill 0,3s
+}
+
+
+.map_guy
+{
+  width:  50%;
+  float: left;
+}
+.map_guy path
+{
+  fill : #a4ced2;
+  stroke: #a4ced2;
+  stroke-width : 0px;
+  transition: fill 0,3s
+}
+
+.map_guy path:hover
+{
+   border-color: green;
+  fill : #a4ced2;
+  stroke: #a4ced2;
+}
+
+.map_guad
+{
+  width:  50%;
+  float: left;
+}
+.map_guad path
+{
+  stroke: #a4ced2;
+  stroke-width : 0px;
+  transition: fill 0,3s
+}
+
+.map_guad path:hover
+{
+  border-color: green;
+  fill :#3538d2;
+  stroke: #a4ced2;
+}
+
+.map_image path:hover
+{
+  fill : #3538d2;
+}
+.ma_list
+{
+  float: right;
+}
+
+.map_list a 
+{
+  color: inherit;
+  text-decoration: none;
+  transition: color 0,3s
+}
+/* --------------------------- */
+
+.bkgGuadDs
+{
+  fill: #FFE4E1;
+}
+.bkgGuadMg
+{
+  fill: #F5DEB3
+}
+.bkgGuadIpt
+{
+  fill: #90EE90
+}
+.bkgGuadIs
+{
+  fill: #FAFAD2
+}
+.bkgGuadGt
+{
+  fill: #E6E6FA
+}
+.bkgGuadBt
+{
+  fill: #7FFFD4
+}
+.bkgGuadFj
+{
+  fill: #F0F8FF
+}
