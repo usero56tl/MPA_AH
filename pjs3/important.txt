@@ -1,0 +1,36 @@
+FLEXBOX
+
+	- EXPLICATIONS
+		https://la-cascade.io/flexbox-guide-complet/
+		https://www.w3.org/TR/css-flexbox-1/#min-size-auto
+		https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3/la-mise-en-page-avec-flexbox
+
+	- SIMULATION EN LIGNE
+		http://bennettfeely.com/flexplorer/
+
+CSS GRID
+
+
+
+FLEXBOX VS CSS_GRID
+
+
+	EXPLICATION
+
+	https://tutorialzine.com/2017/03/css-grid-vs-flexbox
+
+CONCLUSION
+
+	If you've made it through the whole article (in which case great job!), the conclusion shouldn't come as a surprise to you. The truth is, there isn't a better system - both flexbox and the CSS grid are good at different things and should be used together, not as alternatives to one another.
+
+	For those of you who skip directly to the conclusion of articles (no worries, we do it too), here is a summary of the comparison:
+
+	    - CSS grids are great for building the bigger picture. They makes it really easy to manage the layout of the page, and can even handle more unorthodox and asymmetrical designs.
+	    
+	    - Flexbox is great at aligning the content inside elements. Use flex to position the smaller details of a design.
+	    
+	    - Use CSS grids for 2D layouts (rows AND columns).
+	    
+	    - Flexbox works better in one dimension only (rows OR columns).
+	    
+	    - There is no reason to use only CSS grids or only flexbox. Learn both and use them together.

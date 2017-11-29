@@ -2,16 +2,16 @@
 <html lang="fr">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf8" />
-		<title><?= $titre?> </title>
+		<title> Guadeloupe </title>
 		<link rel="stylesheet" href="css/style.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>	
-		<script src="js/script.js"></script>
+	<!--	<link rel="stylesheet" href="slider.css"> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	</head>
 	<body>
 		<div class="entete">
 			<header class="header">
-				<a href="#"><img src="img/logo.png" alt="logo" class="logo"></a>
-				<a href="#"><img src="img/visitadept.png" alt="logo" class="nomlogo"></a>
+				<a href="accueil.php"><img src="img/logo.png" alt="logo" class="logo"></a>
+				<a href="accueil.php"><img src="img/visitadept.png" alt="logo" class="nomlogo"></a>
 			</header>
 			<nav>
 				<input type="checkbox" id="checkbox1" />
