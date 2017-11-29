@@ -1,16 +1,15 @@
 <!--menu 	-->
 
 <?php require "haut.tpl";?>
-
 <!--fin menu 	-->
 		<main>
 			<div class="map_conteneur">
+			<a class="return" href="javascript:history.go(-1)">< Retour</a>
 			  	<div class="map map_conteneur_guad" id="map">
 			  		<div class="map_guad" >
 			  			<svg xmlns="http://www.w3.org/2000/svg" xmlns:amcharts="http://amcharts.com/ammap" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 850 700">
 			  				<defs>
 							</defs>
-
 								<!-- Guadeloupe -->
 							<g>
 								<a class="bkgGuadGt" id="ile-gt" title="Grande terre" href="#" xlink:title="Grande terre" >
@@ -56,7 +55,6 @@
 			  			</ul>
 			  		</div>
 			  	</div>
-
 
 			  	<!-- un require c'est le miex afaire pour le slider -->
 			  	<?php require "slider.tpl";?>
