@@ -42,6 +42,17 @@ ul#menu_horizontal li:hover {
 
 /*iles.html*/
 
+.body-ile{
+	
+  display: grid;
+  justify-content: center;
+  background-image: url("../img/fond-ile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: #cccccc;
+  background-color: rgba(10,0,0,0.6);
+}
+
 .titre {	
 	src:url("font/hotel_de_paris.ttf") format ("ttf");
 	font-family:"hotel"; 
@@ -50,17 +61,13 @@ ul#menu_horizontal li:hover {
 }
 
 .wrapper{	
-	/* margin-left:25%; */
-	/* margin-right:25%;	 */
-	/* background-image:url(../img/fond-ile.jpg); */
-	/* background-repeat:no-repeat; */
-	
 	display:grid;
 	grid-template-columns:repeat(2,1fr);
 	grid-gap:5px;
 	grid-auto-rows:100px,100px;
 	margin-left:25%;
 	margin-right:25%;
+	
 	
 }
 
@@ -105,7 +112,7 @@ ul#menu_horizontal li:hover {
 }
 
 #btn-ile{
-	background-color: #FFFFFF;
+	
 }
 
 #btn-ile input:hover {
@@ -115,7 +122,7 @@ ul#menu_horizontal li:hover {
 
 
 
-@media all and (max-width: 500px){
+@media all and (max-width: 600px){
 	.wrapper {
 		display: grid;
 		width: 100%;
