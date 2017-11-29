@@ -486,3 +486,16 @@ p {
   animation-play-state: paused;
   -webkit-animation-play-state: paused;
 }
+
+/*-----------------------------------------------------*/
+/*                     Bouton retour                   */
+/*-----------------------------------------------------*/
+.return{
+	color:white;
+	text-decoration:none;
+	
+}
+
+.return:hover{
+	text-decoration:underline;
+}
