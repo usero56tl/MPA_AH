@@ -8,7 +8,6 @@
 	</head>
 		
 		<!--menu 	-->
-		<?php require "haut.tpl";?>
 		
 		<!--fin menu 	-->
 		<div class="body-ile" >
@@ -94,5 +93,4 @@
 				
 			</body>
 		</div>	
-		<?php require 'bas.tpl';?>
 	</html>
