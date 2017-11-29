@@ -1,6 +1,6 @@
 
 /*-----------------------------------------------*/
-/*             Propietes par defaut              */
+/*             Proprietes par defaut              */
 /*-----------------------------------------------*/
 *{
     margin: 0;
@@ -40,13 +40,22 @@ h1
 
 .header
 {
+  margin-right:-20%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
+
+
+
+.header .nomlogo{
+	margin-left:8%;
+	margin-top:8%;
+	width:100%;
+}
 /*-----------------------------------------------*/
-/*           Le menu remposive                   */
+/*           Le menu responsive                   */
 /*-----------------------------------------------*/
 .pas-active
 {
@@ -335,7 +344,7 @@ ul li {
   border-color: green;
 }
 /*---------------------------------------------------------*/
-/*  Diferencier la Guadeloupe d'autres regions par defaut  */
+/*  Differencier la Guadeloupe d'autres regions par defaut  */
 /*------------------------ORANGE---------------------------*/
 
 .map_image path.map_guad 
