@@ -1,6 +1,6 @@
 
 /*-----------------------------------------------*/
-/*             Proprietes par defaut              */
+/*             Propietes par defaut              */
 /*-----------------------------------------------*/
 *{
     margin: 0;
@@ -47,16 +47,15 @@ h1
   flex-wrap: wrap;
 }
 
-
-
 .header .nomlogo{
-	margin-left:8%;
-	margin-top:8%;
-	width:100%;
+  margin-left:8%;
+  margin-top:8%;
+  width:100%;
 }
 /*-----------------------------------------------*/
-/*           Le menu responsive                   */
+/*           Le menu remposive                   */
 /*-----------------------------------------------*/
+
 .pas-active
 {
    pointer-events: none;
@@ -227,24 +226,26 @@ nav {
   font-family:"Helvetica light" ;
 }
 
-.btn-ile{
+.btn-ile
+{
   margin-top: 20px;
   background-color: #FFFFFF;
-    border: none;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 13px;
-    cursor: pointer;
-    width:50%; 
-    height:0%;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  cursor: pointer;
+  width:50%; 
+  height:0%;
 }
 
-.btn-ile:hover {
-    background-color: #555555; /* Green */
-    color: white;
+.btn-ile:hover
+{
+  background-color: #555555; /* Green */
+  color: white;
 }
 
 /*-----------------------------------------------*/
@@ -316,6 +317,7 @@ ul li {
   transition: fill 0,3s
 
 }
+
 .map_image .is-active path
 {
   fill : #3538d2;
@@ -330,7 +332,6 @@ ul li {
   color: inherit;
   text-decoration: none;
   transition: color 0,3s
-
 }
 
 .map_list a.is-active 
@@ -338,28 +339,24 @@ ul li {
   color: #3538d2;
  /* font-weight: bold; */
 }
-.map_list li:hover
-{
-  color: #ffffff;
-  border-color: green;
-}
+
 /*---------------------------------------------------------*/
-/*  Differencier la Guadeloupe d'autres regions par defaut  */
+/*  Diferencier la Guadeloupe d'autres regions par defaut  */
 /*------------------------ORANGE---------------------------*/
 
-.map_image path.map_guad 
+path.map_guad
 {
-  fill :orange;
-  stroke: #a4ced2;
-  stroke-width : 0px;
-  transition: fill 0,3s
+  fill: green;
+}
+.is-active path.map_guad
+{
+  fill: #3538d2;
 }
 
-.map_list li.list_guad 
+li.list_guad
 {
-  color: orange;
+  color: green;
 }
-
 
 /* -----------------------------------------------------*/
 /*           correction du svg  de la Guyanne           */
@@ -393,37 +390,17 @@ ul li {
   width:  30%;
   flex-direction: column;
   flex-wrap: wrap;
-
 }
 
-.bkgGuadDs
-{
-  fill: #FFE4E1;
-}
-.bkgGuadMg
-{
-  fill: #F5DEB3
-}
-.bkgGuadIpt
-{
-  fill: #90EE90
-}
-.bkgGuadIs
-{
-  fill: #FAFAD2
-}
-.bkgGuadGt
-{
-  fill: #E6E6FA
-}
-.bkgGuadBt
-{
-  fill: #7FFFD4
-}
-.bkgGuadFj
-{
-  fill: #F0F8FF
-}
+/* Couleur de fond de chaque île */
+
+.bkgGuadDs { fill: #FFE4E1;} /* Le désirable */
+.bkgGuadMg { fill: #F5DEB3;} /* Le désirable */
+.bkgGuadIpt{ fill: #90EE90;} /* îles de la petite-terre */
+.bkgGuadIs { fill: #FAFAD2;} /* îles de saintes */
+.bkgGuadGt { fill: #E6E6FA;} /* Grande Terre */
+.bkgGuadBt { fill: #7FFFD4;} /* Basse Terre */
+.bkgGuadFj { fill: #F0F8FF;} /* Fajou */
 
 /*-----------------------------------------------------*/
 /*                     Slider                          */
@@ -499,12 +476,13 @@ p {
 /*-----------------------------------------------------*/
 /*                     Bouton retour                   */
 /*-----------------------------------------------------*/
-.return{
-	color:white;
-	text-decoration:none;
-	
+.return
+{
+  color:white;
+  text-decoration:none;
 }
 
-.return:hover{
-	text-decoration:underline;
+.return:hover
+{
+  text-decoration:underline;
 }
