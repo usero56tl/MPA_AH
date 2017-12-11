@@ -40,7 +40,21 @@ ul#menu_horizontal li:hover {
 	background-color:#002B58;
 }
 
+/*polices*/
+
+@font-face {
+	font-family: "Hotel de Paris";
+	font-weight: bold;
+	src: url('../polices/hotel_de_paris.ttf');
+}
+
+@font-face1 {
+	font-family: "Helvetica";
+	src: url('../polices/HelveticaLt.ttf');
+}
+
 /*iles.html*/
+
 
 .body-ile{
 	
@@ -49,6 +63,10 @@ ul#menu_horizontal li:hover {
   background-image: url("../img/fond-ile.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+
+}
+.body-ile h1{
+	font-family:"hotel de paris";
 
 }
 
@@ -96,7 +114,7 @@ ul#menu_horizontal li:hover {
 	text-align:justify;
 	padding-left:20px;
 	font-size:smaller;
-	font-family :Helvetica light ;
+	font-family :"Helvetica";
 
 	
 }
@@ -104,6 +122,7 @@ ul#menu_horizontal li:hover {
 .wrapper h3{
 	color:#A9A9A9;
 	font-size:large;
+	font-family:"Helvetica";
 }
 
 .container-ile{	
