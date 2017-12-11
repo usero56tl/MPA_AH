@@ -3,25 +3,25 @@
 /*             Propietes par defaut              */
 /*-----------------------------------------------*/
 *{
+
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-
+.header a{
+  padding: 0;
+  margin: 0;
+}
 body {
   background: #ffffff;
 }
 
-@font-face{ /*autre police à la place de Trend*/
-  font-family:"Hotel";
-  src: url("font/hotel_de_paris.ttf"); /*marche pas -_-*/
-}
 
 h1
 {
-  font-family:Hotel;
+  font-family:"Hotel de Paris";
   text-align:center;
+  font-size: 3em;
   padding-bottom:2%;
   margin:10px auto 10px auto;
   text-align:center;
@@ -36,22 +36,19 @@ h1
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 .header
 {
-  margin-right:-20%;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  min-width: 10%;
 }
 
-.header .nomlogo{
-  margin-left:8%;
-  margin-top:8%;
-  width:100%;
-}
+
 /*-----------------------------------------------*/
 /*           Le menu remposive                   */
 /*-----------------------------------------------*/
@@ -62,10 +59,8 @@ h1
    cursor: default;
 }
 
-
-
-nav {
-  margin-top: 10px;
+nav
+{
   max-width: 700px;
   width: 95%;
 }
@@ -98,7 +93,7 @@ nav {
   transition: background .2s linear;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .menu li a {
     font-size: 13px;
   }
@@ -113,16 +108,16 @@ nav {
     line-height: 40px;
     cursor: pointer;
     width: 100%;
-    height: 40px;
-    font-size: 18px;
-    color: #595959;
-    background: #dbdbdb;
+    height: 100%;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     transition: all .1s linear;
+    background: #cecece;
+
+    /* background-image: linear-gradient(white 50%,grey); */
   }
   .toggle:hover {
-    background: #cecece;
+    background: gray;
   }
   #checkbox1:checked + label .demo li {
     opacity: 1;
@@ -131,7 +126,7 @@ nav {
   }
 
   #checkbox1:checked + label .demo {
-    height: 200px;
+    height: auto;
   }
   .menu {
     border-radius: 0px;
@@ -143,6 +138,7 @@ nav {
     align-items: center;
     height: 0px;
     transition: height .3s linear;
+
   }
   .menu li {
     display: flex;
@@ -151,12 +147,17 @@ nav {
     width: 95%;
     opacity: 0;
     visibility: hidden;
+    margin: 0;
+    
+  /*  background-image: linear-gradient(white 50%,grey);  */
+
   }
   .menu li a {
     width: 95%;
     text-align: center;
     align-self: center;
     align-content: center;
+    background: #cecece;
   }
 }
 
@@ -196,6 +197,7 @@ nav {
   width: 70%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   color: white;
@@ -205,8 +207,8 @@ nav {
 .article-ile
 {
   display: flex;
-  justify-content: flex-start;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .article-ile img{
@@ -223,7 +225,6 @@ nav {
   margin-left: 30px;
   margin-bottom:5%;
   font-size:smaller;
-  font-family:"Helvetica light" ;
 }
 
 .btn-ile
@@ -240,12 +241,14 @@ nav {
   cursor: pointer;
   width:50%; 
   height:0%;
+  margin-bottom: 10px;
 }
 
 .btn-ile:hover
 {
-  background-color: #555555; /* Green */
+  background-color: black;
   color: white;
+  transition: background .5s;
 }
 
 /*-----------------------------------------------*/
@@ -293,8 +296,10 @@ ul{
     border-right: 1 solid #CCCCCC;
 }
 ul li {
-    margin: 12px;
+    margin: 10px;
 }
+
+
 
 .map_conteneur
 {
@@ -344,18 +349,20 @@ ul li {
 /*  Diferencier la Guadeloupe d'autres regions par defaut  */
 /*------------------------ORANGE---------------------------*/
 
-path.map_guad
+path.guad
 {
-  fill: green;
+  fill: orange;
 }
 .is-active path.map_guad
 {
   fill: #3538d2;
 }
 
+
+
 li.list_guad
 {
-  color: green;
+  color: orange;
 }
 
 /* -----------------------------------------------------*/
@@ -373,23 +380,22 @@ li.list_guad
   transition: fill 0,3s
 }
 
-.map_guy path:hover
-{
-  border-color: green;
-  fill : #3538d2;
-  stroke: #a4ced2;
-}
 /*-----------------------------------------------------*/
 /*                  Iles- Guadeloupe                   */
 /*-----------------------------------------------------*/
 .map_conteneur_guad
 {
   background:#223E4A;
-  display: flex;
-  padding:10px; 
-  width:  30%;
-  flex-direction: column;
-  flex-wrap: wrap;
+  width: 30%;
+  border: 1px solid green;
+}
+.map_guad
+{
+  border: 1px solid yellow;
+}
+.map_guad .is-active path
+{
+  fill : #3538d2;
 }
 
 /* Couleur de fond de chaque île */
@@ -406,10 +412,7 @@ li.list_guad
 /*                     Slider                          */
 /*-----------------------------------------------------*/
 
-p {
-  color: #aaa;
-  text-align: right;
-}
+
 .container_slider {
   height: 100%;
 }
@@ -441,6 +444,7 @@ p {
   word-spacing: -2px; /* removing inline elements spacing */
   letter-spacing: -2px;
 }
+
 
 .slider li {
   display: inline-block;
@@ -485,4 +489,55 @@ p {
 .return:hover
 {
   text-decoration:underline;
+}
+
+/*-----------------------------------------------*/
+/*                    Polices                    */
+/*-----------------------------------------------*/
+
+@font-face {
+  font-family: "Hotel de Paris";
+  font-weight: bold;
+  src: url('../polices/hotel_de_paris.ttf');
+}
+
+@font-face1 {
+  font-family: "Helvetica";
+  src: url('../polices/HelveticaLt.ttf');
+}
+
+/*
+@media screen and (orientation: portrait) {
+  img.ri { max-width: 90%; }
+}
+
+@media screen and (orientation: landscape) {
+  img.ri { max-height: 90%; }
+}
+
+img.ri
+{
+  position: absolute;
+  max-width: 80%;
+  top: 10%;
+  left: 10%;
+  border-radius: 3px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.9);
+}
+
+*/
+.meteo
+{
+  background: red;
+}
+g:hover{
+  background: red;
+}
+
+g[cc] title{
+  background: red;
+}
+
+a[xlink:title]:hover{
+  background: green;
 }

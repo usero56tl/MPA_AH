@@ -1,7 +1,7 @@
 <!--menu 	-->
 <?php require "haut.tpl";?>
 		<main>
-			<a href="evenement_inscription.php"/> Description </a>
+			<a href="evenement_description.php"/> Description </a>
 
 
 <!--fin menu 	-->

@@ -1,18 +1,20 @@
 <!--menu 	-->
 
 <?php require "haut.tpl";?>
+
 <!--fin menu 	-->
 		<main>
 			<div class="map_conteneur">
-			<a class="return" href="javascript:history.go(-1)">< Retour</a>
-			  	<div class="map map_conteneur_guad" id="map">
+			  	<div class="map_conteneur_guad" id="map">
+			  		
 			  		<div class="map_guad" >
 			  			<svg xmlns="http://www.w3.org/2000/svg" xmlns:amcharts="http://amcharts.com/ammap" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 850 700">
 			  				<defs>
 							</defs>
+
 								<!-- Guadeloupe -->
 							<g>
-								<a class="bkgGuadGt" id="ile-gt" title="Grande terre" href="#" xlink:title="Grande terre" >
+								<a class="bkgGuadGt" id="carte-gt" href="#" xlink:title="Grande terre" >
 									<path       d="M331.86,0L329.09,3.35L298.54,19.96L289.05,26.92L285.03,33.67L269.51,52.32L260.95,65.73L261.39,75.88L266.01,85.1L271.52,121.89L279.4,123.65L287.6,126.96L294.48,131.28L298.54,135.89L299.54,142.8L299.26,152.4L297.73,161.03L295.16,164.67L276.91,169.07L267.5,180.51L251.26,234.33L251.26,234.41L251.18,234.5L247.44,249.24L247.08,262.64L251.26,275.37L261.39,288.01L274.66,298.73L291.46,308.7L310.92,316.32L332.22,319.96L349.71,317.15L383.04,302.33L557.18,262.39L572.58,266.58L580.1,270.18L607.83,276.96L616.11,277.13L627.21,267.83L621.66,261.97L602.69,256.69L549.14,219.09L538.85,213.89L533.02,209.96L511.59,191.61L502.11,185.79L490.77,183.9L480.72,184.28L471.15,183.52L461.02,178.12L454.19,185.79L439.92,177.99L427.5,169.2L416.72,158.14L406.99,143.6L399.4,127.47L397.91,117.28L400.32,90.25L395.98,63.09L384.32,41.84L367.12,24.61L335.04,1.34L331.86,0z "/>
 								</a>
 
@@ -55,6 +57,7 @@
 			  			</ul>
 			  		</div>
 			  	</div>
+
 
 			  	<!-- un require c'est le miex afaire pour le slider -->
 			  	<?php require "slider.tpl";?>

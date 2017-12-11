@@ -4,7 +4,7 @@
 <!--fin menu 	-->
 
 		<main>
-			<a href="evenement_inscription.php"/> Inscription </a>
+			<div class="shadow"><img class="ri" src="img/img1.jpg" /></div>
 <!-- metre ini le contenu -->
 
 <?php require "bas.tpl";?>

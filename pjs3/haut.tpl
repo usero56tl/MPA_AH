@@ -3,10 +3,9 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf8" />
 		<title> Guadeloupe </title>
-		<link rel="stylesheet" href="css/style.css">
-	<!--	<link rel="stylesheet" href="slider.css"> -->
+		<link rel="stylesheet"  type="text/css" href="css/style.css">
+	<!--	<link rel="stylesheet" href="css/grid.css"> -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 		<div class="entete">
