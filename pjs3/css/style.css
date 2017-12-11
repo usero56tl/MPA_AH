@@ -478,6 +478,26 @@ li.list_guad
   -webkit-animation-play-state: paused;
 }
 
+@media (max-width:800px) {
+  .slider li {
+  display: block;
+  }
+  @keyframes slider {
+  0%, 18% {margin-left: 0; margin-right: 0%}
+  20%, 38% {margin-left: 0% ; margin-right: 0%}
+  40%, 58% {margin-left: 0%; margin-right: 0%}
+  60%, 99.9% {margin-left: 0% ; margin-right: 0%}
+  100% {margin-left: 0;}
+}
+@-webkit-keyframes slider {
+  0%, 18% {margin-left: 0; margin-right: 0%}
+  20%, 38% {margin-left: 0%; margin-right: 0%}
+  40%, 58% {margin-left: 0%; margin-right: 0%}
+  60%, 99.9% {margin-left: 0%; margin-right: 0%}
+  100% {margin-left: 0;}
+}
+}
+
 /*-----------------------------------------------------*/
 /*                     Bouton retour                   */
 /*-----------------------------------------------------*/
