@@ -1,0 +1,639 @@
+
+/*-----------------------------------------------*/
+/*             Propietes par defaut              */
+/*-----------------------------------------------*/
+*{
+
+    margin: 0;
+    padding: 0;
+}
+
+.header a{
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: #ffffff;
+}
+
+
+h1
+{
+  font-family:"Hotel de Paris";
+  text-align:center;
+  font-size: 3em;
+  padding-bottom:2%;
+  margin:10px auto 10px auto;
+  text-align:center;
+  color:#fff;
+}
+/*-----------------------------------------------*/
+/*           L'entete de la page                 */
+/*-----------------------------------------------*/
+.entete
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.header
+{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  min-width: 10%;
+}
+
+
+/*-----------------------------------------------*/
+/*           Le menu remposive                   */
+/*-----------------------------------------------*/
+
+.pas-active
+{
+   pointer-events: none;
+   cursor: default;
+}
+
+nav
+{
+  max-width: 700px;
+  width: 95%;
+}
+
+
+#checkbox1,
+.toggle {
+  display: none;
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+  max-width: 700px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  align-self: center;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 10px 15px;
+  transition: background .2s linear;
+}
+
+@media screen and (max-width: 500px) {
+  .menu li a {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .toggle {
+    clear: both;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 40px;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all .1s linear;
+    background: #cecece;
+
+    /* background-image: linear-gradient(white 50%,grey); */
+  }
+  .toggle:hover {
+    background: gray;
+  }
+  #checkbox1:checked + label .demo li {
+    opacity: 1;
+    visibility: visible;
+    transition: all .7s linear;
+  }
+
+  #checkbox1:checked + label .demo {
+    height: auto;
+  }
+  .menu {
+    border-radius: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 0px;
+    transition: height .3s linear;
+
+  }
+  .menu li {
+    display: flex;
+    /* magic */
+    align-self: center;
+    width: 95%;
+    opacity: 0;
+    visibility: hidden;
+    margin: 0;
+    
+  /*  background-image: linear-gradient(white 50%,grey);  */
+
+  }
+  .menu li a {
+    width: 95%;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+    background: #cecece;
+  }
+}
+
+.demo {
+ background-image: linear-gradient(white 50%,grey);
+ border-top:2px solid #F1F1F1;
+}
+
+.demo li a {
+  color: #000066;
+  border-right : 1px solid white;
+  border-left : 1px solid white;
+
+}
+
+.demo li a:hover {
+  background: #000066;
+  color: white;
+}
+/*-----------------------------------------------*/
+/*        Le contenu de chaque page              */
+/*-----------------------------------------------*/
+.main
+{
+  display: flex;
+  justify-content: center;
+  background-image: url("../img/fond-ile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: #cccccc;
+}
+/*-----------------------------------------------*/
+/*                   Les iles                    */
+/*-----------------------------------------------*/
+#conteneur-ile
+{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+  background-color: rgba(10,0,0,0.6);
+}
+
+.article-ile
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.article-ile img{
+  max-width:20em;
+  max-height:11em;
+  min-width: 0; min-height: 0;
+  margin-bottom: 5%;
+}
+
+.description-ile
+{
+  max-width:350px;
+  text-align:justify;
+  margin-left: 30px;
+  margin-bottom:5%;
+  font-size:smaller;
+}
+
+.btn-ile
+{
+  margin-top: 20px;
+  background-color: #FFFFFF;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  cursor: pointer;
+  width:50%; 
+  height:0%;
+  margin-bottom: 10px;
+}
+
+.btn-ile:hover
+{
+  background-color: black;
+  color: white;
+  transition: background .5s;
+}
+
+/*-----------------------------------------------*/
+/*                   le footer                   */
+/*-----------------------------------------------*/
+
+#monBouton{
+  height:60px;
+  margin-left:7px;
+}
+
+#monBouton:hover{
+  height:65px;
+}
+
+.logo{
+  padding-left:1%;
+  width: 110px;
+}
+.nomlogo{
+  width: 205px;
+}
+
+.foot{
+  padding-top: 0.2px;
+  height: 170px;
+  width:100%;
+  background-color:#333333;
+  color:grey;
+  text-align:center;
+}
+
+/*-----------------------------------------------*/
+/*              Map - France                     */
+/*-----------------------------------------------*/
+
+ul{
+   /* background: #3399ff; */ 
+    font-size: 18px;
+    color: white;
+    list-style-type: none;
+    margin-left: 10px;
+    padding: 20px;
+    height: 100%;
+    border-right: 1 solid #CCCCCC;
+}
+ul li {
+    margin: 10px;
+}
+
+
+
+.map_conteneur
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background:#223E4A;
+}
+
+.map_image
+{
+  margin-top: 10px;
+  width:  65%;
+}
+.map_image path
+{
+  fill : #a4ced2;
+  stroke: #223E4A;
+  stroke-width : 1px;
+  transition: fill 0,3s
+
+}
+
+.map_image .is-active path
+{
+  fill : #3538d2;
+}
+.ma_list
+{
+  width: 100%;
+}
+
+.map_list a 
+{
+  color: inherit;
+  text-decoration: none;
+  transition: color 0,3s
+}
+
+.map_list a.is-active 
+{
+  color: #3538d2;
+ /* font-weight: bold; */
+}
+
+/*---------------------------------------------------------*/
+/*  Diferencier la Guadeloupe d'autres regions par defaut  */
+/*------------------------ORANGE---------------------------*/
+
+path.guad
+{
+  fill: orange;
+}
+.is-active path.map_guad
+{
+  fill: #3538d2;
+}
+
+
+
+li.list_guad
+{
+  color: orange;
+}
+
+/* -----------------------------------------------------*/
+/*           correction du svg  de la Guyanne           */
+/* ----Tout commenter et passer la souris sur Guyanne---*/
+.map_guy
+{
+  width:  50%;
+}
+.map_guy path
+{
+  fill : #a4ced2;
+  stroke: #a4ced2;
+  stroke-width : 0px;
+  transition: fill 0,3s
+}
+
+/*-----------------------------------------------------*/
+/*                  Iles- Guadeloupe                   */
+/*-----------------------------------------------------*/
+.map_conteneur_guad
+{
+  background:#223E4A;
+  width: 30%;
+  border: 1px solid green;
+}
+.map_guad
+{
+  border: 1px solid yellow;
+}
+.map_guad .is-active path
+{
+  fill : #3538d2;
+}
+
+/* Couleur de fond de chaque île */
+
+.bkgGuadDs { fill: #FFE4E1;} /* Le désirable */
+.bkgGuadMg { fill: #F5DEB3;} /* Le désirable */
+.bkgGuadIpt{ fill: #90EE90;} /* îles de la petite-terre */
+.bkgGuadIs { fill: #FAFAD2;} /* îles de saintes */
+.bkgGuadGt { fill: #E6E6FA;} /* Grande Terre */
+.bkgGuadBt { fill: #7FFFD4;} /* Basse Terre */
+.bkgGuadFj { fill: #F0F8FF;} /* Fajou */
+
+/*-----------------------------------------------------*/
+/*                     Slider                          */
+/*-----------------------------------------------------*/
+
+
+.container_slider {
+  height: 100%;
+}
+
+
+
+/* Slider */
+.slider,
+.slider li {
+  width: 800px;
+  height: auto;
+}
+
+.slider img
+{
+  width: 100%;
+  height: auto;
+  padding: 0px;
+
+}
+
+.slider {
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+  border-radius: 3px;
+  word-spacing: -2px; /* removing inline elements spacing */
+  letter-spacing: -2px;
+}
+
+
+.slider li {
+  display: inline-block;
+}
+
+/*
+        Correction de bug des sliders, avant cetait à 100% 200% etc...
+*/
+@keyframes slider {
+  0%, 18% {margin-left: 0; margin-right: 0%}
+  20%, 38% {margin-left: -102% ; margin-right: 0%}
+  40%, 58% {margin-left: -204%; margin-right: 0%}
+  60%, 99.9% {margin-left: -306% ; margin-right: 0%}
+  100% {margin-left: 0;}
+}
+@-webkit-keyframes slider {
+  0%, 18% {margin-left: 0; margin-right: 0%}
+  20%, 38% {margin-left: -102%; margin-right: 0%}
+  40%, 58% {margin-left: -204%; margin-right: 0%}
+  60%, 99.9% {margin-left: -306%; margin-right: 0%}
+  100% {margin-left: 0;}
+}
+.slider li:first-child {
+  animation: slider 20s ease-out infinite;
+  -webkit-animation: slider 20s ease-out infinite;
+}
+
+/* pause animation on mouse over */
+.slider:hover li:first-child {
+  animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+}
+
+/*-----------------------------------------------------*/
+/*                     Bouton retour                   */
+/*-----------------------------------------------------*/
+.return
+{
+  color:white;
+  text-decoration:none;
+}
+
+.return:hover
+{
+  text-decoration:underline;
+}
+
+/*-----------------------------------------------*/
+/*                    Polices                    */
+/*-----------------------------------------------*/
+
+@font-face {
+  font-family: "Hotel de Paris";
+  font-weight: bold;
+  src: url('../polices/hotel_de_paris.ttf');
+}
+
+@font-face1 {
+  font-family: "Helvetica";
+  src: url('../polices/HelveticaLt.ttf');
+}
+
+/*
+@media screen and (orientation: portrait) {
+  img.ri { max-width: 90%; }
+}
+
+@media screen and (orientation: landscape) {
+  img.ri { max-height: 90%; }
+}
+
+img.ri
+{
+  position: absolute;
+  max-width: 80%;
+  top: 10%;
+  left: 10%;
+  border-radius: 3px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.9);
+}
+
+*/
+
+
+/*-----------------------------------------------------*/
+/*                     Bouton retour                   */
+/*-----------------------------------------------------*/
+.return
+{
+  color:white;
+  text-decoration:none;
+}
+
+/*-----------------------------------------------------*/
+/*                     Animation evenements            */
+/*-----------------------------------------------------*/
+.d_event{
+  display:inline;
+}
+
+.transi{
+  color:white;
+  width: 400px;
+    height: 150px;
+    background-color: blue;
+  transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.details{
+  display:none;
+}
+
+.transi:hover{
+  height:400px;
+  background-color:green;
+  transform: translateY(-230px);
+}
+
+.transi:hover .details{
+  display:block;
+}
+
+.imgevent{
+  width:400px;
+}
+
+/*-----------------------------------------------*/
+/*           Evenements_Inscription              */
+/*-----------------------------------------------*/
+
+#conteneur-inscription {
+	display: flex  ;
+	flex-wrap : wrap ;
+	background : black  ; 
+	justify-content: space-around;
+	color : white ; 
+	padding-bottom : 100%; 
+	padding-top: 15%;
+}
+#infos{
+	background : #22475C;
+	border : 1px solid white ;
+	
+}
+
+#infos p
+{
+	text-align : justify;
+}
+#conteneur-form{
+	display : flex ; 
+	flex-wrap : wrap ; 
+	background : black; 
+	flex-direction: column;
+	
+}
+
+#ident{
+	display : flex ; 
+	flex-wrap : wrap ; 
+	background : black ; 
+	padding : 5px ; 
+}
+.bt-form{
+	margin-top: 20px;
+	background-color: #22475C;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    cursor: pointer;
+    width:50%; 
+    height:0%;
+}
+input{
+	background : black ; 
+	color : white;
+	
+}
+.conteneur_desc
+{
+	background:#142B37;
+}
+
+/*-----------------------------------------------*/
+/*           Evenements_Description              */
+/*-----------------------------------------------*/
