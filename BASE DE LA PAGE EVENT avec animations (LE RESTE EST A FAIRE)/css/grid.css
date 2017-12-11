@@ -1,0 +1,145 @@
+ul#menu_horizontal {
+	display:inline-block;
+	width : 40%; 
+	height : 70px;
+	margin : auto auto auto 4%;
+	padding : 0;
+	background-image: linear-gradient(#002B58, #74D0F1);
+	border : 1px solid black;
+	list-style-type : none; 
+	border-radius: 8px;
+}
+ 
+ul#menu_horizontal li {
+	padding : 0 0.5em;  
+	text-align:center;
+	width : 15%;
+	line-height : 70px;
+}
+ 
+ul#menu_horizontal li.bouton_gauche {
+	float : left;
+	border-right : 1px solid black;
+}
+
+ul#menu_horizontal li.bouton_droite {
+	float : right;
+	border-left : 1px dashed black;
+}
+ 
+ul#menu_horizontal a {
+	color : white;
+	text-decoration : none;
+	padding : 0 0.5em; 
+	font :  1em "Trebuchet MS";
+}
+ 
+ul#menu_horizontal li:hover {
+	border-radius: 8px;
+	font-weight: bold;
+	background-color:#002B58;
+}
+
+/*iles.html*/
+
+.body-ile{
+	
+  display: grid;
+  justify-content: center;
+  background-image: url("../img/fond-ile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: #cccccc;
+  background-color: rgba(10,0,0,0.6);
+}
+
+.titre {	
+	src:url("font/hotel_de_paris.ttf") format ("ttf");
+	font-family:"hotel"; 
+	text-align:center;
+	
+}
+
+.wrapper{	
+	display:grid;
+	grid-template-columns:repeat(2,1fr);
+	grid-gap:5px;
+	grid-auto-rows:100px,100px;
+	margin-left:25%;
+	margin-right:25%;
+	
+	
+}
+
+.wrapper img{
+	padding-top:19px;
+	width:20em;
+	height:11em;
+	float:left;
+	margin-bottom:10%;
+	vertical-align:text-top;
+	
+}
+
+.description-ile{
+	
+	display:grid;
+	grid-template-columns:repeat(1,1fr);
+	grid-gap:0px;
+	grid-auto-rows:100px 100px;
+	text-align:justify;
+	padding-left:20px;
+	font-size:smaller;
+	font-family :Helvetica light ;
+	
+}
+
+.wrapper h3{
+	color:#A9A9A9;
+	font-size:large;
+}
+
+.container-ile{	
+	width:300px;
+	display:block;
+}
+
+.wrapper input{	
+	width:130px;
+	height:29px;
+	text-align:center;
+	
+}
+
+#btn-ile{
+	
+}
+
+#btn-ile input:hover {
+	background-color:#696969;
+	color:#FFFFFF;
+}
+
+
+
+@media all and (max-width: 600px){
+	.wrapper {
+		display: grid;
+		width: 100%;
+		margin: 0 auto;	
+		grid-template-columns:repeat(1,1fr);
+		
+	}
+	.titre{
+		font-size:20px;
+	}
+
+	.container-ile{
+		width:100%;
+		display:grid;
+		width:auto;
+		margin: 0 auto;	
+	}
+
+}
+
