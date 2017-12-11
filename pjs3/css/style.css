@@ -527,18 +527,70 @@ img.ri
 }
 
 */
-.meteo
+
+/*-----------------------------------------------*/
+/*           Evenements_Inscription              */
+/*-----------------------------------------------*/
+
+#conteneur-inscription {
+	display: flex  ;
+	flex-wrap : wrap ;
+	background : black  ; 
+	justify-content: space-around;
+	color : white ; 
+	padding-bottom : 100%; 
+	padding-top: 15%;
+}
+#infos{
+	background : #22475C;
+	border : 1px solid white ;
+	
+}
+
+#infos p
 {
-  background: red;
+	text-align : justify;
 }
-g:hover{
-  background: red;
+#conteneur-form{
+	display : flex ; 
+	flex-wrap : wrap ; 
+	background : black; 
+	flex-direction: column;
+	
 }
 
-g[cc] title{
-  background: red;
+#ident{
+	display : flex ; 
+	flex-wrap : wrap ; 
+	background : black ; 
+	padding : 5px ; 
+}
+.bt-form{
+	margin-top: 20px;
+	background-color: #22475C;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    cursor: pointer;
+    width:50%; 
+    height:0%;
+}
+input{
+	background : black ; 
+	color : white;
+	
+}
+.conteneur_desc
+{
+	background:#142B37;
 }
 
-a[xlink:title]:hover{
-  background: green;
-}
+
+
+/*-----------------------------------------------*/
+/*           Evenements_Description              */
+/*-----------------------------------------------*/
