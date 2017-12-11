@@ -449,6 +449,10 @@ li.list_guad
 .slider li {
   display: inline-block;
 }
+
+/*
+        Correction de bug des sliders, avant cetait à 100% 200% etc...
+*/
 @keyframes slider {
   0%, 18% {margin-left: 0; margin-right: 0%}
   20%, 38% {margin-left: -102% ; margin-right: 0%}
