@@ -448,22 +448,19 @@ li.list_guad
 
 .slider li {
   display: inline-block;
-  word-spacing: normal; /* restoring spacing */
-  letter-spacing: normal;
 }
-
 @keyframes slider {
   0%, 18% {margin-left: 0; margin-right: 0%}
-  20%, 38% {margin-left: -100% ; margin-right: 0%}
-  40%, 58% {margin-left: -200%; margin-right: 0%}
-  60%, 99.9% {margin-left: -300% ; margin-right: 0%}
+  20%, 38% {margin-left: -102% ; margin-right: 0%}
+  40%, 58% {margin-left: -204%; margin-right: 0%}
+  60%, 99.9% {margin-left: -306% ; margin-right: 0%}
   100% {margin-left: 0;}
 }
 @-webkit-keyframes slider {
   0%, 18% {margin-left: 0; margin-right: 0%}
-  20%, 38% {margin-left: -100%; margin-right: 0%}
-  40%, 58% {margin-left: -200%; margin-right: 0%}
-  60%, 99.9% {margin-left: -300%; margin-right: 0%}
+  20%, 38% {margin-left: -102%; margin-right: 0%}
+  40%, 58% {margin-left: -204%; margin-right: 0%}
+  60%, 99.9% {margin-left: -306%; margin-right: 0%}
   100% {margin-left: 0;}
 }
 .slider li:first-child {
