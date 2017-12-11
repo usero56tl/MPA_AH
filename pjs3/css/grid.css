@@ -40,7 +40,21 @@ ul#menu_horizontal li:hover {
 	background-color:#002B58;
 }
 
+/*polices*/
+
+@font-face {
+	font-family: "Hotel de Paris";
+	font-weight: bold;
+	src: url('../polices/hotel_de_paris.ttf');
+}
+
+@font-face1 {
+	font-family: "Helvetica";
+	src: url('../polices/HelveticaLt.ttf');
+}
+
 /*iles.html*/
+
 
 .body-ile{
 	
@@ -49,14 +63,18 @@ ul#menu_horizontal li:hover {
   background-image: url("../img/fond-ile.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-color: #cccccc;
-  background-color: rgba(10,0,0,0.6);
+
+}
+.body-ile h1{
+	font-family:"hotel de paris";
+
 }
 
 .titre {	
 	src:url("font/hotel_de_paris.ttf") format ("ttf");
 	font-family:"hotel"; 
 	text-align:center;
+	color:white;
 	
 }
 
@@ -67,22 +85,28 @@ ul#menu_horizontal li:hover {
 	grid-auto-rows:100px,100px;
 	margin-left:25%;
 	margin-right:25%;
-	
+	background-color: #cccccc;
+	background-color: rgba(10,0,0,0.6);
+	color:white;
+	padding-right:25px;
 	
 }
 
 .wrapper img{
+	
+	grid-template-columns:repeat(1,1fr);
+	grid-gap:10px;
+	margin-left:10%;
+	margin-bottom:10%;
 	padding-top:19px;
 	width:20em;
 	height:11em;
-	float:left;
-	margin-bottom:10%;
+	grid-auto-rows:100px 100px;
 	vertical-align:text-top;
 	
 }
 
 .description-ile{
-	
 	display:grid;
 	grid-template-columns:repeat(1,1fr);
 	grid-gap:0px;
@@ -90,13 +114,15 @@ ul#menu_horizontal li:hover {
 	text-align:justify;
 	padding-left:20px;
 	font-size:smaller;
-	font-family :Helvetica light ;
+	font-family :"Helvetica";
+
 	
 }
 
 .wrapper h3{
 	color:#A9A9A9;
 	font-size:large;
+	font-family:"Helvetica";
 }
 
 .container-ile{	
@@ -122,24 +148,72 @@ ul#menu_horizontal li:hover {
 
 
 
-@media all and (max-width: 600px){
+@media all and (min-width: 200px) and (max-width: 680px){
+
 	.wrapper {
 		display: grid;
-		width: 100%;
-		margin: 0 auto;	
 		grid-template-columns:repeat(1,1fr);
-		
+		grid-gap:0;
+		grid-auto-flow: rows;
 	}
 	.titre{
-		font-size:20px;
+		font-size:8px;
+		display:grid;
 	}
 
 	.container-ile{
-		width:100%;
 		display:grid;
 		width:auto;
 		margin: 0 auto;	
 	}
 
+	.wrapper img{
+		margin-left:6%;
+		margin-right:6%;
+		width:250px;
+		height:200px;
+	}
+	
+	.description-ile{
+		width:250px;
+		margin-left:8%;
+		margin-right:8%;
+	
+	}
 }
 
+@media screen and (min-width: 700px	) and (max-width: 1500px) {
+	.wrapper {
+		display: grid;
+		grid-template-columns:repeat(2,1fr);
+		grid-gap:0;
+		grid-auto-flow: rows;
+	
+		
+	}
+	.titre{
+		font-size:10px;
+		display:grid;
+	}
+
+	.container-ile{
+		display:grid;
+		width:auto;
+		margin: 0 auto;	
+	}
+
+	.wrapper img{
+		margin-left:6%;
+		margin-right:6%;
+		width:250px;
+		height:200px;
+	}
+	
+	.description-ile{
+		width:250px;
+		margin-left:8%;
+		margin-right:8%;
+	
+	}
+
+	
