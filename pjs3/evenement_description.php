@@ -35,6 +35,13 @@
 	<form action="evenement_inscription.com">
 		<input class="bt-form" type="submit" value="S'inscrire">
 	</form>
+
+	<p>
+		<center> 
+					<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d61280.48340053117!2d-61.648894!3d16.270222!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sus!4v1512994820796" width="700" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</center>
+</center>
+
 		
 </div>
 
