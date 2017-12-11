@@ -1,3 +1,5 @@
+
+<?php require "haut.tpl";?>
 <!doctype html>
 <html lang="fr">
 	<head>
@@ -94,3 +96,5 @@
 			</body>
 		</div>	
 	</html>
+
+	<?php require "bas.tpl";?>	
