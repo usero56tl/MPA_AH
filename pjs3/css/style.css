@@ -594,7 +594,14 @@ li.list_guad
   display:none;
   text-align: center;
   padding-top: 50px;
+  height: 100%;
   background-color: red;
+}
+
+.btn-event
+{
+  display: flex;
+  justify-content: center;
 }
 .btn-event input.bt-form{
   background-color: #22475C;
@@ -612,7 +619,7 @@ li.list_guad
 
   height: 150px;
   width:100%;
-  transform: translateY(-205px);
+  transform: translateY(-204px);
 }
 
 .transi:hover .details{
