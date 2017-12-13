@@ -14,6 +14,7 @@
 						<div class="transi">
 							<h1>Croisière aux Antilles</h1>
 							<h5>
+								ven. 22 déc. |  Pointe-à-Pitre
 								22 décembre - 30 déc. 2017 à 14:00 - 19:00 -04
                                 Pointe-à-Pitre, Pointe-à-Pitre, Guadeloupe
                             </h5>
@@ -34,38 +35,39 @@
 					<div class="d2_event">
 						<img src="img/festival.jpg" class="imgevent" alt="event">
 						<div class="transi">
-							<h1>ok</h1>
+							<h1>Festival FEMI</h1>
+							<h5>
+								sam.  27 janv. 2018  |  Lamentin
+								27 janvier - 3 février, 2018 à 10:00 - 22:00 -04 Lamentin, Lamentin, Guadeloupe
+                            </h5>
 							<div class="details">
-								<h2>ouai blabla</h2>
-								<p>aaaaaaaaaa</p>
-								<p>aaaaaaaaaa</p>
-								<p>aaaaaaaaaa</p>
-								<p>aaaaaaaaaa</p>
-								<p>aaaaaaaaaa</p>
-								<p>aaaaaaaaaa</p>
-								<p>aaaaaaaaaa</p>
+								<p>
+									Le FEMI, festival francophone de cinéma de la Grande Caraïbe, se donne pour mission de promouvoir les œuvres cinématographiques et les cinéastes des Antilles-Guyane et plus largement de la Caraïbe.
+								</p>
 							</div>
 						</div>
-						
+						<div  class="btn-event">
 							<input class="bt-form" type="submit" value="S'inscrire">
+						</div>
 					</div>
 		
 					<div class="d2_event">
 						<img src="img/randonee.jpg" class="imgevent" alt="event">
 						<div class="transi">
-							<h1>ok</h1>
+							<h1>Randonnée des Trois Cornes</h1>
+							<h5>
+								ven. 10 nov , 2017  |  Sainte Rose
+                            </h5>
+                            <h3> 10 novembre, 2017 à 10:00 - 12:00 -04 <br> Sainte Rose, Ste Rose, Guadeloupe </h3>
 							<div class="details">
-								<h2>ouai blabla</h2>
-								<p>aaaaaaaaaa</p>
-								<p>aaaaaaaaaa</p>
-								<p>aaaaaaaaaa</p>
-								<p>aaaaaaaaaa</p>
-								<p>aaaaaaaaaa</p>
-								<p>aaaaaaaaaa</p>
-								<p>aaaaaaaaaa</p>
+								<p>
+									Partez en randonnée à la Boucle de Sofaïa / Trois cornes. Balade facile et accessible à tous. Venez découvrir toute la beauté de la Guadeloupe en deux heures.
+								</p>
 							</div>
 						</div>
+						<div  class="btn-event">
 							<input class="bt-form" type="submit" value="S'inscrire">
+						</div>
 					</div>
 				</div>
 
