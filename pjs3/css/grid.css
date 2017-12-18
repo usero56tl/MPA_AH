@@ -53,8 +53,9 @@ ul#menu_horizontal li:hover {
 	src: url('../polices/HelveticaLt.ttf');
 }
 
-/*iles.html*/
-
+/*-----------------------------------------------*/
+/*          iles_grid.php                        */
+/*-----------------------------------------------*/
 
 .body-ile{
 	
@@ -146,9 +147,11 @@ ul#menu_horizontal li:hover {
 	color:#FFFFFF;
 }
 
+/*-----------------------------------------------*/
+/*                  responsive                   */
+/*-----------------------------------------------*/
 
-
-@media all and (min-width: 200px) and (max-width: 680px){
+@media all and (min-width: 100px) and (max-width: 680px){ /*petits écrans*/
 
 	.wrapper {
 		display: grid;
@@ -156,8 +159,8 @@ ul#menu_horizontal li:hover {
 		grid-gap:0;
 		grid-auto-flow: rows;
 	}
-	.titre{
-		font-size:8px;
+	.titre{/*titre de l'article*/
+		font-size:4px;
 		display:grid;
 	}
 
@@ -167,14 +170,14 @@ ul#menu_horizontal li:hover {
 		margin: 0 auto;	
 	}
 
-	.wrapper img{
+	.wrapper img{ /*image article iles*/
 		margin-left:6%;
 		margin-right:6%;
 		width:250px;
 		height:200px;
 	}
 	
-	.description-ile{
+	.description-ile{ /*description de l'image iles*/
 		width:250px;
 		margin-left:8%;
 		margin-right:8%;
@@ -182,7 +185,7 @@ ul#menu_horizontal li:hover {
 	}
 }
 
-@media screen and (min-width: 700px	) and (max-width: 1500px) {
+@media screen and (min-width: 700px	) and (max-width: 1500px) { /*les grands écrans*/
 	.wrapper {
 		display: grid;
 		grid-template-columns:repeat(2,1fr);
