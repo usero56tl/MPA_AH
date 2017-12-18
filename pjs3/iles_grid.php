@@ -76,7 +76,7 @@
 							<h3> Basse-Terre </h3>					
 							Une des deux ailes que forment ce papillon qu&acute;est la Guadeloupe est la Basse-Terre reconnaissable par la magnifique silhouette de son Volcan, 
 							la Grande-Dame.
-							Ce volcan s&acute;&eacute;l&egrave;ve à plus de 1467 mètres. Il s’agit d’une &icirc;le qui invite au voyage et &agrave; l&acute;aventure ! 							
+							Ce volcan s&acute;&eacute;l&egrave;ve &agrave; plus de 1467 m&egrave;tres. Il s’agit d’une &icirc;le qui invite au voyage et &agrave; l&acute;aventure ! 							
 							<div id="btn-ile">
 								<a href="https://fr.wikipedia.org/wiki/Basse-Terre"  target="_blank"><input type="button" value="Plus ..." /></a>
 							</div>

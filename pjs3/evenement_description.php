@@ -32,7 +32,7 @@
 		Embarquez dans un véritable paradis ambulant avec pas moins de neuf étages, une gastronomie hors norme et des boutiques de renom.
 	</p>
 
-	<form action="evenement_inscription.com">
+	<form action="evenement_inscription.php">
 		<input class="bt-form" type="submit" value="S'inscrire">
 	</form>
 

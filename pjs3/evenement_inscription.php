@@ -4,39 +4,44 @@
 <!--fin menu 	-->
 	
 		<main>
-		
-			<form action="email_envoyer.html">
-		<div id = "conteneur-inscription">
-		
-				<div id="conteneur-form">
-					<div id="ident">
-						<div id="nom">
-							Nom:
-							<input type="text" name="Nom" value="">
-								 
+			<div id ="conteneur-inscription">
+
+				<div class="form">
+
+					<p class="form_titre">Ajoutez vos coordonn&eacute;es</p>
+					<form action="email_envoyer.html">
+						<div id="ident">
+							
+							<div class="form_event ">
+								*Nom:
+								<input type="text" name="Nom" value="">
+							</div>
+
+							<div class="form_event">
+								*Pr&eacute;nom:
+								<input type="text" name="Prenom" value="">
+							</div>
+						</div>	
+
+						<div class="form_event">
+								*E-mail:
+								<input type="text" name="mail" value="">
 						</div>
-						<div id="prenom">
-							Prenom:
-							<input type="text" name="Prenom" value="">
-						</div>
-					</div>
-					<div id="email">
-						E-mail:
-						<input type="text" name="mail" value="">
-					 <br><br>
-						<input class="bt-form" type="submit" value="Ok">
-					</div>
+						<input id="btn_event_inscr"class="bt-form" type="submit" value="OK">
+					</form> 
 				</div>
 				
-			<div id = "infos">
-			<p> Croisière aux Antilles</p>
-			<hr>
-			<p> 22 décembre - 30 décembres 2017</p>
-			<p> 14:00 - 19:00 </p>
-			<p> Point-à-Pitre</p>
+				<div id="infos">
+					<center>
+						<p class="infos_titre"> Croisière aux Antilles</p>
+						<hr>
+					</center>
+					<p> 22 d&eacute;cembre - 30 d&eacute;cembres 2017</p>
+					<p> 14:00 - 19:00 </p>
+					<p> Point-à-Pitre</p>
+				</div>
+
 			</div>
-	</div>
-		</form> 
 						
 						 
 		

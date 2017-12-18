@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="fr">
 	<head>
-		<meta http-equiv="Content-Type" content="text/html;charset=utf8" />
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 		<title> Guadeloupe </title>
 		<link rel="stylesheet"  type="text/css" href="css/style.css">
 	<!--	<link rel="stylesheet" href="css/grid.css"> -->
@@ -18,14 +18,12 @@
 				<label for="checkbox1">
 					<ul class="menu demo">
 						<li><a href="accueil.php">Accueil</a></li>
-						<li><a href="iles.php">Les îles</a></li>
-						<li><a href="evenements.php">Evénements</a></li>
-						<li><a href="#" class="pas-active">F.A.Q.</a></li>
+						<li><a href="iles.php">Les &icirc;les</a></li>
+						<li><a href="evenements.php">&Eacute;v&eacute;nements</a></li>
+						<li><a href="cartes.php">Cartes</a></li>
 						<li><a href="#" class="pas-active">Contact</a></li>
 					</ul>
 					<span class="toggle">☰</span>
 				</label>
 			</nav>
 		</div>
-	
-	
