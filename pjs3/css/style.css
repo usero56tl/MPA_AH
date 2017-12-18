@@ -1,11 +1,9 @@
 
 /*-----------------------------------------------*/
-/*             Propietes par defaut              */
+/*             Proprietes par defaut              */
 /*-----------------------------------------------*/
 
-
 *{
-
     margin: 0;
     padding: 0;
 }
@@ -27,6 +25,51 @@ body {
   margin:10px auto 10px auto;
   text-align:center;
   color:#fff;
+}
+
+/*-----------------------------------------------*/
+/*                    Accueil                    */
+/*-----------------------------------------------*/
+#monBoutonB{
+	height:60px;
+	margin-left:7px;
+}
+
+#monBoutonB:hover{
+	height:65px;
+}
+
+.info{
+	text-align:center;
+	color:white;
+	background-color:black;
+	line-height:2em;
+}
+
+.bold{
+	font-weight:normal;
+	font-size:1.5em;
+}
+
+.contact{
+	color:white;
+	font-weight:normal;
+	text-decoration:underline;
+	font-size:0.8em;
+}
+
+.apropos {
+	font-weight:normal;
+	font-size:0.8em;
+}
+
+/*-----------------------------------------------*/
+/*                    Partage                    */
+/*-----------------------------------------------*/
+.part{
+	height:1em;
+	width:1em;
+	margin-left:10px;
 }
 
 /*-----------------------------------------------*/
@@ -52,7 +95,7 @@ body {
 
 
 /*-----------------------------------------------*/
-/*           Le menu remposive                   */
+/*           Le menu responsive                  */
 /*-----------------------------------------------*/
 
 .pas-active
@@ -180,6 +223,7 @@ nav
   background: #000066;
   color: white;
 }
+
 /*-----------------------------------------------*/
 /*        Le contenu de chaque page              */
 /*-----------------------------------------------*/
@@ -545,13 +589,7 @@ input.centree2{
   font-family: "Helvetica";
   src: url('../polices/HelveticaLt.ttf');
 }
-/*-----------------------------------------------------*/
-/*                     Bouton retour                   */
-/*-----------------------------------------------------*/
-.return{
-  color:white;
-  text-decoration:none;
-}
+
 /*-----------------------------------------------------*/
 /*                     evenements                      */
 /*-----------------------------------------------------*/
