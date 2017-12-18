@@ -155,12 +155,12 @@ nav
   /*  background-image: linear-gradient(white 50%,grey);  */
 
   }
-  .menu li a {
-    background-image: linear-gradient(white 50%,grey);
-    width: 95%;
-    text-align: center;
-    align-self: center;
-    align-content: center;
+.menu li a {
+  background-image: linear-gradient(white 50%,grey);
+  width: 95%;
+  text-align: center;
+  align-self: center;
+  align-content: center;
   }
 }
 
@@ -183,8 +183,7 @@ nav
 /*-----------------------------------------------*/
 /*        Le contenu de chaque page              */
 /*-----------------------------------------------*/
-.main
-{
+.main{
   display: flex;
   justify-content: center;
   background-image: url("../img/fond-ile.jpg");
@@ -195,8 +194,7 @@ nav
 /*-----------------------------------------------*/
 /*                   Les iles                    */
 /*-----------------------------------------------*/
-#conteneur-ile
-{
+#conteneur-ile{
   width: 70%;
   display: flex;
   flex-direction: column;
@@ -207,8 +205,7 @@ nav
   background-color: rgba(10,0,0,0.6);
 }
 
-.article-ile
-{
+.article-ile{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -221,8 +218,7 @@ nav
   margin-bottom: 5%;
 }
 
-.description-ile
-{
+.description-ile{
   max-width:350px;
   text-align:justify;
   margin-left: 30px;
@@ -230,8 +226,7 @@ nav
   font-size:smaller;
 }
 
-.btn-ile
-{
+.btn-ile{
   margin-top: 20px;
   background-color: #FFFFFF;
   border: none;
@@ -247,8 +242,7 @@ nav
   margin-bottom: 10px;
 }
 
-.btn-ile:hover
-{
+.btn-ile:hover{
   background-color: black;
   color: white;
   transition: background .5s;
@@ -294,21 +288,19 @@ nav
 }
 
 ul{
-   /* background: #3399ff; */ 
-    font-size: 18px;
-    color: white;
-    list-style-type: none;
-    margin-left: 10px;
-    padding: 20px;
-    height: 100%;
-    border-right: 1 solid #CCCCCC;
+  font-size: 18px;
+  color: white;
+  list-style-type: none;
+  margin-left: 10px;
+  padding: 20px;
+  height: 100%;
+  border-right: 1 solid #CCCCCC;
 }
 ul li {
-    margin: 10px;
+  margin: 10px;
 }
 
-.map_conteneur
-{
+.map_conteneur{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -317,47 +309,38 @@ ul li {
   padding-top: 10px;
 }
 
-.map_image 
-{
+.map_image{
   width:  65%;
 }
-.map_conteneur .map_image svg
-{
+.map_conteneur .map_image svg{
   margin-bottom: 50%;
 }
-.map_image path
-{
+.map_image path{
   fill : #a4ced2;
   stroke: #223E4A;
   stroke-width : 1px;
   transition: fill 0,3s
-
 }
 
-h2
-{
+h2{
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
 }
-.map_image .is-active path
-{
+.map_image .is-active path{
   fill : #3538d2;
 }
 .map_list
 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
   font-size:15px;
-
 }
 
-.map_list a 
-{
+.map_list a {
   color: inherit;
   text-decoration: none;
   transition: color 0,3s
 }
 
-.map_list a.is-active 
-{
+.map_list a.is-active {
   color: #3538d2;
  /* font-weight: bold; */
 }
@@ -366,29 +349,24 @@ h2
 /*  Diferencier la Guadeloupe d'autres regions par defaut  */
 /*------------------------ORANGE---------------------------*/
 
-path.guad
-{
+path.guad{
   fill: orange;
 }
-.is-active path.map_guad
-{
+.is-active path.map_guad{
   fill: #3538d2;
 }
 
-li.list_guad
-{
+li.list_guad{
   color: orange;
 }
 
 /* -----------------------------------------------------*/
 /*           correction du svg  de la Guyanne           */
 /* ----Tout commenter et passer la souris sur Guyanne---*/
-.map_guy
-{
+.map_guy{
   width:  50%;
 }
-.map_guy path
-{
+.map_guy path{
   fill : #a4ced2;
   stroke: #a4ced2;
   stroke-width : 0px;
@@ -399,14 +377,12 @@ li.list_guad
 /*                  Iles- Guadeloupe                   */
 /*-----------------------------------------------------*/
 
-@media screen and (max-width: 400px)
-{
+@media screen and (max-width: 400px){
   
 }
 
 
-.map_conteneur_guad
-  {
+.map_conteneur_guad{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -414,18 +390,15 @@ li.list_guad
     justify-content: center;
   }
 
-#map_guad
-{
+#map_guad{
   width: 60%;
 
 }
 
-#map_guad .is-active path
-{
+#map_guad .is-active path{
   fill : #3538d2;
 }
-#map_guad svg
-{
+#map_guad svg{
   margin-bottom:20%;
 }
 /* Couleur de fond de chaque île */
@@ -443,28 +416,27 @@ li.list_guad
 /*-----------------------------------------------------*/
 
 
-.container_slider {
+.container_slider{
   width: 100%;
 }
 
 
-@keyframes slidy {
-0% { left: 0%; }
-20% { left: 0%; }
-25% { left: -100%; }
-45% { left: -100%; }
-50% { left: -200%; }
-70% { left: -200%; }
-75% { left: -300%; }
-95% { left: -300%; }
-100% { left: -400%; }
+@keyframes slidy{
+  0%    { left: 0%;    }
+  20%   { left: 0%;    }
+  25%   { left: -100%; }
+  45%   { left: -100%; }
+  50%   { left: -200%; }
+  70%   { left: -200%; }
+  75%   { left: -300%; }
+  95%   { left: -300%; }
+  100%  { left: -400%; }
 }
 
 body { margin: 0; } 
 div#slider { overflow: hidden; }
 div#slider figure img { width: 20%; float: left; }
-div#slider figure { 
-
+div#slider figure {
   position: relative;
   width: 500%;
   margin: 0;
@@ -473,14 +445,15 @@ div#slider figure {
   font-size: 0;
   animation: 30s slidy infinite; 
 }
-.centree {
+.centree{
   display: flex-column;
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2.2em
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.2em
 }
+
 input.centree2{
   margin-bottom: 10%;
   width: 40%;
@@ -489,30 +462,27 @@ input.centree2{
   }
 
 
-  @media screen and (max-width: 750px)
-{
+@media screen and (max-width: 750px){
   input.centree2{
-  margin-bottom: 10%;
-  width: 30%;
-  font-size: 17px;
-  color: #C0C0C0;
+    margin-bottom: 10%;
+    width: 30%;
+    font-size: 17px;
+    color: #C0C0C0;
   }
 
-  .centree {
-  display: flex-column;
+  .centree{
+    display: flex-column;
     position: absolute;
-    top: 55%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 0.5em
 
   }
-  .titre
-  {
+  .titre{
     font-size: 1em;
   }
-  .monBouton
-  {
+  .monBouton{
     display: none;
   }
 }
@@ -520,43 +490,44 @@ input.centree2{
  @media screen and (max-width: 500px)
 {
   input.centree2{
+  flex-wrap: wrap;
   margin-bottom: 10%;
   width: 30%;
-  font-size: 17px;
+  font-size: 10px;
   color: #C0C0C0;
   }
 
   .centree {
-  display: flex-column;
+    display: flex-column;
+    flex-wrap: wrap;
     position: absolute;
-    top: 45%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 0.5em
-
   }
-  .titre
-  {
+  .titre{
     font-size: 1em;
   }
 
-  div.btn-vers-bas img
-  {
+  div.btn-vers-bas img{
     display: none;
+  }
+
+  #infos{
+    background: red;
   }
 }
 
 /*-----------------------------------------------------*/
 /*                     Bouton retour                   */
 /*-----------------------------------------------------*/
-.return
-{
+.return{
   color:white;
   text-decoration:none;
 }
 
-.return:hover
-{
+.return:hover{
   text-decoration:underline;
 }
 
@@ -577,8 +548,7 @@ input.centree2{
 /*-----------------------------------------------------*/
 /*                     Bouton retour                   */
 /*-----------------------------------------------------*/
-.return
-{
+.return{
   color:white;
   text-decoration:none;
 }
@@ -586,8 +556,7 @@ input.centree2{
 /*                     evenements                      */
 /*-----------------------------------------------------*/
 
-.conteneur_event
-{
+.conteneur_event{
   display: flex;
   color: white;
   flex-wrap: wrap;
@@ -614,8 +583,7 @@ input.centree2{
 /*                     Animation evenements            */
 /*-----------------------------------------------------*/
 
-.meteo1 iframe
-{
+.meteo1 iframe{
   border: yellow;
   width:  470px;
   height: 600px;
@@ -623,12 +591,10 @@ input.centree2{
  margin-bottom: 15px;
 }
 
- .meteo2 iframe
-  {
+ .meteo2 iframe{
    display: none;
   }
-.contenu_event
-{
+.contenu_event{
   width: 60%;
   display: flex-column;
 }
@@ -726,23 +692,20 @@ input.centree2{
   height: 200px;
   margin-right: 
 }
-.meteo1 { overflow:hidden; }
 
-@media screen and (max-width: 500px) {
-  html {
+@media screen and (max-width: 500px){
+  html{
     font-size: 16px;
   }
-  div {
+  div{
     font-size: 15px; /* Fine tune unbehaved elements */
   }
   
-  .meteo1 
-  {
+  .meteo1{
     display: none;
   }
 
-   .meteo2 iframe
-  {
+   .meteo2 iframe{
    display: flex;
    background: #729EC8;
    margin-top: 20px
@@ -751,8 +714,7 @@ input.centree2{
    color: white;
    border: 0px;
   }
-   .meteo1 iframe
-  {
+   .meteo1 iframe{
    display: none;
   }
 
@@ -763,13 +725,11 @@ input.centree2{
   margin-bottom: 30px;
   }
 
-  .titre
-  {
+  .titre{
     font-size: 0.5em;
   }
 }
-@media screen and (max-width: 900px)
-{
+@media screen and (max-width: 900px){
   .d2_event{
   border: 1px solid gray;
   background-color: black;
@@ -777,8 +737,7 @@ input.centree2{
   margin-bottom: 30px;
   }
 
-  .details
-  {
+  .details{
     padding-bottom: 10%;
   }
 }
@@ -797,8 +756,7 @@ input.centree2{
   padding-top: 10%;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
 }
-#infos
-{
+#infos{
   background : #22475C;
   border : 1px solid #4E6C7D ;
   padding-top:5%;
@@ -808,37 +766,32 @@ input.centree2{
   color: #CED6DB;
 }
 
-.infos_titre
-{
+.infos_titre{
   color: white;
   font-size: 20px;
 }
 
-.form_titre
-{
+.form_titre{
   color: white;
   font-size: 40px;
   margin-bottom: 30px;
 }
 
 
-.form
-{
+.form{
   display: flex-column;
   justify-content: center;
   align-items: center;
   margin-right: 10%;
   width: 40%;  
 }
-#ident
-{
+#ident{
 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.form_event input
-{
+.form_event input{
   background-color: black;
   border: 1px solid #2E2E2E;
   color:white;
@@ -846,8 +799,7 @@ input.centree2{
   width: 100%;
   margin-bottom: 30px;
 }
-hr
-{
+hr{
   width:   90%;
   margin :5%;
   display: block;
@@ -858,8 +810,7 @@ hr
   padding: 0; 
 }
 
-input#btn_event_inscr
-{
+input#btn_event_inscr{
   width: 100%;
   font-size: 17px;
 }
