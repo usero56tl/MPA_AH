@@ -867,6 +867,22 @@ input#btn_event_inscr{
   width: 100%;
   font-size: 17px;
 }
+
 /*-----------------------------------------------*/
 /*           Evenements_Description              */
 /*-----------------------------------------------*/
+
+
+.conteneur_desc {
+  display : flex-column;
+  flex:wrap;
+  background : #22475C  ; 
+  color : white ; 
+}
+.marge_bas{
+	margin-bottom : 1% ; 
+}
+p.marge_bas
+{
+	width: 60%;
+}
