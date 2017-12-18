@@ -1,8 +1,12 @@
-
-
 $(function(){
     $("#monBouton").click(function(){
         $("html, body").animate({scrollTop: 0},"slow");
+    });
+});
+
+$(function(){
+    $("#monBoutonB").click(function(){
+         $("html, body").animate({ scrollTop: $(document).height() }, 1000);
     });
 });
 
