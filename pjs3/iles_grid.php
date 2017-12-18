@@ -1,6 +1,7 @@
-
+<!--menu 	-->
 <?php require "haut.tpl";?>
-<!doctype html>
+<!--fin menu 	-->
+<!DOCTYPE html>
 <html lang="fr">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf8" />
@@ -9,9 +10,7 @@
 		<script src="script.js"></script>
 	</head>
 		
-		<!--menu 	-->
-		
-		<!--fin menu 	-->
+	
 		<div class="body-ile" >
 			<body>
 				
