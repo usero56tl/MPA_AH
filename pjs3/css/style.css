@@ -436,6 +436,20 @@ li.list_guad{
   background-color:#333333;
 }
 
+.contact h1{
+  font-family:"Hotel de Paris";
+  font-size: 6em;
+  padding:0.5em;
+}
+@media only screen and (max-width: 550px) {
+.contact h1{
+  font-family:"Hotel de Paris";
+  font-size: 50px;
+  padding:0.5em;
+}
+}
+
+
 
 /*-----------------------------------------------------*/
 /*                  Iles- Guadeloupe                   */
