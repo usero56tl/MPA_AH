@@ -21,7 +21,7 @@
 						<li><a href="iles.php">Les &icirc;les</a></li>
 						<li><a href="evenements.php">&Eacute;v&eacute;nements</a></li>
 						<li><a href="cartes.php">Cartes</a></li>
-						<li><a href="#" class="pas-active">Contact</a></li>
+						<li><a href="contact.php">Contact</a></li>
 					</ul>
 					<span class="toggle">☰</span>
 				</label>
