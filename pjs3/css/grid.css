@@ -111,7 +111,8 @@ ul#menu_horizontal li:hover {
 	display:grid;
 	grid-template-columns:repeat(1,1fr);
 	grid-gap:0px;
-	grid-auto-rows:100px 100px;
+	grid-auto-rows:120px 100px;
+	padding-top:15px;
 	text-align:justify;
 	padding-left:20px;
 	font-size:smaller;
@@ -131,16 +132,7 @@ ul#menu_horizontal li:hover {
 	display:block;
 }
 
-.wrapper input{	
-	width:130px;
-	height:29px;
-	text-align:center;
-	
-}
 
-#btn-ile{
-	
-}
 
 #btn-ile input:hover {
 	background-color:#696969;
@@ -160,7 +152,7 @@ ul#menu_horizontal li:hover {
 		grid-auto-flow: rows;
 	}
 	.titre{/*titre de l'article*/
-		font-size:4px;
+		font-size:3px;
 		display:grid;
 	}
 
@@ -220,3 +212,195 @@ ul#menu_horizontal li:hover {
 	}
 
 	
+	
+/*-----------------------------------------------*/
+/*           L'entete de la page                 */
+/*-----------------------------------------------*/
+.entete
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.header
+{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  min-width: 10%;
+}
+
+
+/*-----------------------------------------------*/
+/*           Le menu responsive                  */
+/*-----------------------------------------------*/
+
+.pas-active
+{
+   pointer-events: none;
+   cursor: default;
+}
+
+nav
+{
+  max-width: 700px;
+  width: 95%;
+}
+
+
+#checkbox1,
+.toggle {
+  display: none;
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+  max-width: 700px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  align-self: center;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 10px 15px;
+  transition: background .2s linear;
+}
+
+@media screen and (max-width: 500px) {
+  ul li{
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .toggle {
+    clear: both;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 40px;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all .1s linear;
+    background: #cecece;
+
+    /* background-image: linear-gradient(white 50%,grey); */
+  }
+  .toggle:hover {
+    background: gray;
+  }
+  #checkbox1:checked + label .demo li {
+    opacity: 1;
+    visibility: visible;
+    transition: all .7s linear;
+  }
+
+  #checkbox1:checked + label .demo {
+    height: auto;
+  }
+  .menu {
+    border-radius: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 0px;
+    transition: height .3s linear;
+
+  }
+  .menu li {
+    display: flex;
+
+    /* magic */
+    align-self: center;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    margin: 0;
+    
+  /*  background-image: linear-gradient(white 50%,grey);  */
+
+  }
+.menu li a {
+  background-image: linear-gradient(white 50%,grey);
+  width: 95%;
+  text-align: center;
+  align-self: center;
+  align-content: center;
+  }
+}
+
+.demo {
+ background-image: linear-gradient(white 50%,grey);
+ border-top:2px solid #F1F1F1;
+}
+
+.demo li a {
+  color: #000066;
+  border-right : 1px solid white;
+  border-left : 1px solid white;
+
+}
+
+.demo li a:hover {
+  background: #000066;
+  color: white;
+}
+	
+/*-----------------------------------------------*/
+/*                    Partage                    */
+/*-----------------------------------------------*/
+.part{
+	height:1em;
+	width:1em;
+	margin-left:10px;
+}
+
+
+/*-----------------------------------------------*/
+/*                   le footer                   */
+/*-----------------------------------------------*/
+
+#monBouton{
+  height:60px;
+  margin-left:7px;
+}
+
+#monBouton:hover{
+  height:65px;
+}
+
+.logo{
+  padding-left:1%;
+  width: 110px;
+}
+.nomlogo{
+  width: 205px;
+}
+
+.foot{
+  padding-top: 0.2px;
+  height: 170px;
+  width:100%;
+  background-color:#333333;
+  color:grey;
+  text-align:center;
+}
