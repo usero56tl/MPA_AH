@@ -7,7 +7,7 @@
 <!-- metre ini le contenu -->
 
 <div class="conteneur_desc">
-	<a class="return " href="javascript:history.go(-1)">< Retour</a>
+	<a class="return " href="javascript:history.go(-1)">Retour</a>
 	<center> 
 		<h5 class="marge_bas">déc. 22, 2017  |  Pointe-à-Pitre</h5>
 
@@ -23,7 +23,7 @@
 	
 	
 	<div id="tof">
-	<img src="img/boat.jpg" alt="Slide 1" width="70%" height="50%">
+	<img src="img/boat.jpg" alt="Slide 1" >
 	</div>
 	
 	<h3 class = "marge_bas" >Heure et lieu</h3>
