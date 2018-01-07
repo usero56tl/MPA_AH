@@ -235,6 +235,14 @@
 /*           Evenements_Inscription              */
 /*-----------------------------------------------*/
 
+@media screen and (min-width: 700px){
+#conteneur-inscription .form{
+
+  justify-content: center;
+  align-items: center;
+  width: 40%;  
+ } 
+}
 #conteneur-inscription {
   display: flex  ;
   background : black  ; 
@@ -252,7 +260,6 @@
   font-size: 14px;
   padding: 40px 25px 40px 25px;
   color: #CED6DB;
-  margin: auto;
 }
 
 .infos_titre{
