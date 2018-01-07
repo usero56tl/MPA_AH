@@ -27,9 +27,10 @@
 						<div class="form_event">
 								*E-mail:
 								<input type="text" name="mail" value="">
+								<input id="btn_event_inscr" class="bt-form" type="submit" value="OK">
 						</div>
 
-						<input id="btn_event_inscr" class="bt-form" type="submit" value="OK">
+						
 					</form> 
 				</div>
 				

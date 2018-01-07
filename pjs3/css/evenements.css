@@ -235,14 +235,8 @@
 /*           Evenements_Inscription              */
 /*-----------------------------------------------*/
 
-@media screen and (min-width: 700px){
-#conteneur-inscription .form{
 
-  justify-content: center;
-  align-items: center;
-  width: 40%;  
- } 
-}
+
 #conteneur-inscription {
   display: flex  ;
   background : black  ; 
@@ -252,6 +246,8 @@
   padding-top: 10%;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
 }
+
+
 #infos{
   background : #22475C;
   border : 1px solid #4E6C7D ;
@@ -283,7 +279,6 @@
 #ident{
 
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 .form_event input{
@@ -306,11 +301,44 @@ hr{
 }
 
 input#btn_event_inscr{
-  width: 100%;
+  width: 101%;
+  background-color: #367292;
   font-size: 17px;
+  height: 50px;
 }
 
-@media screen and (max-width: 550px)
+#ident
+  {
+    width: 100%;
+  }
+ 
+ @media screen and (max-width: 1120px)
+{
+   
+   #conteneur-inscription .form
+    {
+      margin-right: 30px;
+      width: 40%;
+    }
+
+     #conteneur-inscription .form form #ident
+    {
+      display: flex;
+      flex-direction: column;
+    }
+    #ident div.form_event input
+    {
+      margin-right: 0px;
+      width: 100%;
+    }
+  .form_event {
+ 
+  width: 100%;
+  }    
+
+}
+
+@media screen and (max-width: 600px)
 {
     #conteneur-inscription
     {
@@ -318,30 +346,26 @@ input#btn_event_inscr{
       align-items: center;
     }
 
-    #infos
+    #conteneur-inscription .form
     {
-      margin: auto;
+      margin-right: 0px;
+      width: 80%;
+      padding-top :30px;
     }
 
-    .form_titre
+     #conteneur-inscription .form form #ident
     {
+      display: flex;
+      flex-direction: column;
+    }
+    #ident div.form_event input
+    {
+      margin-right: 0px;
       width: 100%;
-      text-align: center;
     }
-
-    .form{
-    margin-top: 20px;
-    width: 80%;  
-  }
-
   .form_event {
  
   width: 100%;
-  }
-
-  #ident
-  {
-    width: 100%;
   }
 }
 
