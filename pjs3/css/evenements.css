@@ -362,6 +362,15 @@ input#btn_event_inscr{
   margin-bottom: 1%;
 }
 
+@media all and (min-width: 600px)
+{
+  .conteneur_desc .titre h1
+  {
+    font-size: 6em;
+  }
+}
+
+
 .conteneur_desc form .bt-form
 {
   width: auto;
