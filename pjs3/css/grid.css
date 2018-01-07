@@ -3,23 +3,17 @@
 /*          iles_grid.php                        */
 /*-----------------------------------------------*/
 
-.body-ile{
-	
+.body-ile
+{
   display: grid;
   justify-content: center;
   background-image: url("../img/fond-ile.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-
-}
-.body-ile h1{
-	font-family:"hotel de paris";
-
 }
 
-.body-ile .titre {	
-	src:url("font/hotel_de_paris.ttf") format ("ttf");
-	font-family:"hotel"; 
+.body-ile .titre
+{	
 	text-align:center;
 	font-size: 4px;
 	color:white;
@@ -42,7 +36,6 @@
 	display:grid;
 	grid-template-columns:repeat(2,1fr);
 	grid-gap:5px;
-	grid-auto-rows:100px,100px;
 	color:white;
 	padding-right:25px;
 	
@@ -57,7 +50,6 @@
 	padding-top:19px;
 	width:20em;
 	height:11em;
-	grid-auto-rows:100px 100px;
 	vertical-align:text-top;
 	
 }
@@ -100,7 +92,6 @@
 		display: grid;
 		grid-template-columns:repeat(1,1fr);
 		grid-gap:0;
-		grid-auto-flow: rows;
 	}
 .body-ile	.titre{/*titre de l'article*/
 		font-size:0.5em;
@@ -129,9 +120,6 @@
 		display: grid;
 		grid-template-columns:repeat(2,1fr);
 		grid-gap:0;
-		grid-auto-flow: rows;
-	
-		
 	}
 .body-ile	.titre{
 		font-size:10px;

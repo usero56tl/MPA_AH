@@ -1,0 +1,380 @@
+/*-----------------------------------------------------*/
+/*                     evenements                      */
+/*-----------------------------------------------------*/
+
+.conteneur_event{
+  display: flex;
+  color: white;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: flex-end;
+  background:#142B37;
+  padding-top: 2%;
+}
+
+.bt-form{
+  background-color: #367292;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  cursor: pointer;
+  width:20%; 
+}
+
+@media screen and (max-width: 500px)
+{
+  .bt-form{
+  width:auto; 
+  }
+}
+
+/*-----------------------------------------------------*/
+/*                     Animation evenements            */
+/*-----------------------------------------------------*/
+
+
+
+.meteo1 iframe{
+  border: yellow;
+  width:  470px;
+  height: 600px;
+  padding-right:15px;
+ margin-bottom: 15px;
+}
+
+ .meteo2 iframe{
+   display: none;
+  }
+.contenu_event{
+  width: 60%;
+}
+
+.d_event{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.d2_event{
+  border: 1px solid gray;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-width: 10%;
+  width: 30%;
+  margin-bottom: 20px;
+}
+.transi{
+
+  padding-top: 10px;
+  color:white;
+  width:100%;
+  max-height: 150px;
+  min-height: 150px;
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  background-color: #000;
+  text-align: center;
+}
+
+.transi h5{
+  padding-top: 20px;
+  background-color: black;
+}
+.transi h1{
+
+  font-size: 2em;
+}
+
+
+.details{
+  display:none;
+  font-size: 14px;
+  color: grey;
+  padding-top : 30px;
+  padding-bottom : 30px;
+  text-align: center;
+  background-color: black;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
+
+}
+.details_1{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 13px;
+  color: #808080;
+  }
+
+.btn-event input.bt-form{
+  background-color: #367292;
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  cursor: pointer;
+  width:100%; 
+  height:0%;
+  margin-bottom: 30px;
+}
+
+.btn-event:active {
+    border: 0px solid red;
+}
+
+.transi:hover{
+
+  height: 150px;
+  width:100%;
+  transform: translateY(-200px);
+}
+
+.transi:hover .details{
+  display:block;
+}
+
+.imgevent{
+  width:100%;
+  height: 200px;
+}
+
+@media screen and (max-width: 500px){
+  html{
+    font-size: 16px;
+  }
+  div{
+    font-size: 15px; /* Fine tune unbehaved elements */
+  }
+    
+    .meteo1 iframe{
+      display: none;
+    }
+
+
+   .meteo2 iframe{
+   display: flex;
+   background: #729EC8;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   width: 200px;
+   height: 350px;
+   color: white;
+   border: 0px;
+  }
+   
+  .d2_event{
+  border: 1px solid gray;
+  background-color: black;
+  min-width: 100%;
+  margin-bottom: 30px;
+  }
+
+  .titre h1{
+        font-size: 3.5em;
+
+  }
+}
+
+@media screen and (max-width: 1230px){
+  
+  .conteneur_event{
+    display: flex;
+    flex-direction: column-reverse;
+    color: white;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    background:#142B37;
+    padding-top: 2%;
+    }
+
+     .contenu_event
+     {
+        width: 70%;
+      }
+
+    .meteo1
+    {
+      width: auto;
+    }
+}
+@media screen and (max-width: 900px){
+  
+  .d2_event{
+  border: 1px solid gray;
+  background-color: black;
+  min-width: 100%;
+  margin-bottom: 30px;
+  }
+
+  .details{
+    padding-bottom: 10%;
+  }
+
+  .titre h1{
+        font-size: 2.5em;
+
+  }
+
+  .contenu_event
+  {
+    width: 50%;
+     
+  }
+}
+
+/*-----------------------------------------------*/
+/*           Evenements_Inscription              */
+/*-----------------------------------------------*/
+
+#conteneur-inscription {
+  display: flex  ;
+  background : black  ; 
+  justify-content: center;
+  color : white ; 
+  padding-bottom : 10%; 
+  padding-top: 10%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
+}
+#infos{
+  background : #22475C;
+  border : 1px solid #4E6C7D ;
+  padding-top:5%;
+  height: 0%;
+  font-size: 14px;
+  padding: 40px 25px 40px 25px;
+  color: #CED6DB;
+  margin: auto;
+}
+
+.infos_titre{
+  color: white;
+  font-size: 20px;
+}
+
+.form_titre{
+  color: white;
+  font-size: 6vmin;
+  margin-bottom: 30px;
+}
+
+
+.form{
+  justify-content: center;
+  align-items: center;
+  margin-right: 10%;
+  width: 40%;  
+}
+#ident{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.form_event input{
+  background-color: black;
+  border: 1px solid #2E2E2E;
+  color:white;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+hr{
+  width:   90%;
+  margin :5%;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #395A6D;
+  margin: 1em 0;
+  padding: 0; 
+}
+
+input#btn_event_inscr{
+  width: 100%;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 550px)
+{
+    #conteneur-inscription
+    {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    #infos
+    {
+      margin: auto;
+    }
+
+    .form_titre
+    {
+      width: 100%;
+      text-align: center;
+    }
+
+    .form{
+    margin-top: 20px;
+    width: 80%;  
+  }
+
+  .form_event {
+ 
+  width: 100%;
+  }
+
+  #ident
+  {
+    width: 100%;
+  }
+}
+
+/*-----------------------------------------------*/
+/*           Evenements_Description              */
+/*-----------------------------------------------*/
+
+
+.conteneur_desc {
+
+  text-align: center;
+  display : flex;
+  flex-direction: column;
+  background : #142B37  ;
+
+  color : white ; 
+  padding-bottom: 40px;
+  padding-top: 40px;
+
+  font: 16px 'Open Sans', Arial, sans-serif;
+}
+.conteneur_desc *{
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+#tof img{
+  width :70% ; 
+}
+
+.desc
+{
+  text-align: left;
+  width: 55%;
+  margin-left: 20%;
+}
+.erreur
+{
+  text-align: center;
+  background : #142B37  ;
+  padding-top: 20px;
+  padding-bottom: 20%;
+}
