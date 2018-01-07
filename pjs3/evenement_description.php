@@ -10,13 +10,15 @@
 								
 				<h5>déc. 22, 2017  |  Pointe-à-Pitre</h5>
 
-				<div class="titre"><h1>Croisière aux Antilles</h1></div>
+				<div class="longueur_max">
+					<div class="titre">
+						<h1>Croisière aux Antilles</h1>
+					</div>
 
-				
-					<p>
+					<div>
 						Partez en croisière au départ de Pointe-à-Pitre pour huit jours de voyage paradisiaque, à la découverte de l’archipel Guadeloupéen.
-					</p>
-				
+					</div>
+				</div>
 
 				<form action="evenement_inscription.php">
 					<input class="bt-form marge_bas" type="submit" value="S'inscrire">

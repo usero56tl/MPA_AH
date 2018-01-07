@@ -348,6 +348,7 @@ input#btn_event_inscr{
   text-align: center;
   display : flex;
   flex-direction: column;
+  align-items: center;
   background : #142B37  ;
 
   color : white ; 
@@ -361,6 +362,10 @@ input#btn_event_inscr{
   margin-bottom: 1%;
 }
 
+.conteneur_desc form .bt-form
+{
+  width: auto;
+} 
 #tof img{
   width :70% ; 
 }
@@ -369,7 +374,6 @@ input#btn_event_inscr{
 {
   text-align: left;
   width: 55%;
-  margin-left: 20%;
 }
 .erreur
 {
@@ -377,4 +381,9 @@ input#btn_event_inscr{
   background : #142B37  ;
   padding-top: 20px;
   padding-bottom: 20%;
+}
+
+.longueur_max
+{
+  max-width: 50%;
 }

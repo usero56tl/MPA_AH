@@ -140,16 +140,11 @@ nav
   }
   .menu li {
     display: flex;
-
-    /* magic */
     align-self: center;
     width: 100%;
     opacity: 0;
     visibility: hidden;
     margin: 0;
-    
-  /*  background-image: linear-gradient(white 50%,grey);  */
-
   }
 .menu li a {
   background-image: linear-gradient(white 50%,grey);
