@@ -1,0 +1,154 @@
+
+/*-----------------------------------------------*/
+/*          iles_grid.php                        */
+/*-----------------------------------------------*/
+
+.body-ile{
+	
+  display: grid;
+  justify-content: center;
+  background-image: url("../img/fond-ile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}
+.body-ile h1{
+	font-family:"hotel de paris";
+
+}
+
+.body-ile .titre {	
+	src:url("font/hotel_de_paris.ttf") format ("ttf");
+	font-family:"hotel"; 
+	text-align:center;
+	font-size: 4px;
+	color:white;
+	padding-top: 20px;
+	
+}
+
+
+.conteneur_wrapper
+{
+	background-color: rgba(10,0,0,0.6);
+}
+
+.conteneur_wrapper .titre h1
+{
+	width: auto;
+	height: auto;
+}
+.wrapper{	
+	display:grid;
+	grid-template-columns:repeat(2,1fr);
+	grid-gap:5px;
+	grid-auto-rows:100px,100px;
+	color:white;
+	padding-right:25px;
+	
+}
+
+.wrapper img{
+	
+	grid-template-columns:repeat(1,1fr);
+	grid-gap:10px;
+	margin-left:10%;
+	margin-bottom:10%;
+	padding-top:19px;
+	width:20em;
+	height:11em;
+	grid-auto-rows:100px 100px;
+	vertical-align:text-top;
+	
+}
+
+.description-ile{
+	padding-top:15px;
+	text-align:justify;
+	padding-left:20px;
+	font-size:smaller;
+	font-family :"Helvetica";
+
+	
+}
+
+.wrapper h3{
+	color:#A9A9A9;
+	font-size:large;
+	font-family:"Helvetica";
+}
+
+.container-ile{	
+	width:300px;
+	display:block;
+}
+
+
+
+#btn-ile input:hover {
+	background-color:#696969;
+	color:#FFFFFF;
+}
+
+/*-----------------------------------------------*/
+/*                  responsive                   */
+/*-----------------------------------------------*/
+
+@media all and (min-width: 100px) and (max-width: 680px){ /*petits écrans*/
+
+	.wrapper {
+		display: grid;
+		grid-template-columns:repeat(1,1fr);
+		grid-gap:0;
+		grid-auto-flow: rows;
+	}
+.body-ile	.titre{/*titre de l'article*/
+		font-size:0.5em;
+		display:grid;
+	}
+
+	.container-ile{
+		display:grid;
+		width:auto;
+		margin: 0 auto;	
+	}
+
+	.wrapper img{ /*image article iles*/
+		
+	}
+	
+	.description-ile{ /*description de l'image iles*/
+		margin-left:8%;
+		margin-right:8%;
+	
+	}
+}
+
+@media screen and (min-width: 700px	){ /*les grands écrans*/
+	.wrapper {
+		display: grid;
+		grid-template-columns:repeat(2,1fr);
+		grid-gap:0;
+		grid-auto-flow: rows;
+	
+		
+	}
+.body-ile	.titre{
+		font-size:10px;
+		display:grid;
+	}
+
+	.container-ile{
+		display:grid;
+		width:auto;
+		margin: 0 auto;	
+	}
+
+	.wrapper img{
+	}
+	
+.body-ile	.body-ile .description-ile{
+		margin-left:8%;
+		margin-right:8%;
+	}
+}
